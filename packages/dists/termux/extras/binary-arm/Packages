@@ -1,0 +1,80 @@
+Package: iodine
+Version: 0.7.0-4
+Architecture: arm
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: gregor herrmann <gregoa@debian.org>
+Installed-Size: 229
+Section: net
+Priority: extra
+Homepage: http://code.kryo.se/iodine
+Description: tool for tunneling IPv4 data through a DNS server
+ This is a piece of software that lets you tunnel IPv4 data through a DNS
+ server. This can be usable in different situations where internet access is
+ firewalled, but DNS queries are allowed.
+ .
+ iodine is similar to nstx but has password authentication, brings up the
+ tun interface automatically and lets the user specify the IP address as a
+ command line option.
+Filename: dists/termux/extras/binary-arm/iodine_0.7.0-4_arm.deb
+Size: 202668
+SHA256: 41a62e0eef7c4c6877a1bbd7904c4f03c5e4b097ddae3a0a9019c5299f01f979
+
+Package: polipo
+Version: 1.1.1-7
+Architecture: arm
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Rolf Leggewie <foss@rolf.leggewie.biz>
+Installed-Size: 708
+Section: web
+Priority: optional
+Homepage: http://www.pps.jussieu.fr/~jch/software/polipo/
+Description: lightweight, caching web proxy
+ Polipo is a caching web proxy (a web cache) designed to be used by one
+ person or a small group of people. It is similar in spirit to WWWOFFLE, but
+ the implementation techniques are more like the ones used by Squid.
+ .
+ Polipo has some features that are unique among currently available proxies:
+ .
+  o Polipo will use HTTP/1.1 pipelining if it believes that the remote
+  server supports it, whether the incoming requests are pipelined or
+  come in simultaneously on multiple connections (this is more than the
+  simple usage of persistent connections, which is done by e.g. Squid);
+ .
+  o Polipo will cache the initial segment of an instance if the
+  download has been interrupted, and, if necessary, complete it later
+  using Range requests;
+ .
+  o Polipo will upgrade client requests to HTTP/1.1 even if they come
+  in as HTTP/1.0, and up- or downgrade server replies to the client's
+  capabilities (this may involve conversion to or from the HTTP/1.1
+  chunked encoding);
+ .
+  o Polipo has fairly complete support for IPv6 (except for scoped
+  (link-local) addresses).
+ .
+ Optionally, Polipo can use a technique known as Poor Man's Multiplexing
+ to reduce latency.
+Filename: dists/termux/extras/binary-arm/polipo_1.1.1-7_arm.deb
+Size: 161502
+SHA256: a23bc4499394ba751bad2ade0208ec5d577447bdccf8d7e34719c46c5907509f
+
+Package: ptunnel
+Version: 0.72-1
+Architecture: arm
+Maintainer: Ubuntu Developers <ubuntu-devel-discuss@lists.ubuntu.com>
+Original-Maintainer: Romain Beauxis <toots@rastageeks.org>
+Installed-Size: 127
+Section: net
+Priority: optional
+Homepage: http://www.cs.uit.no/~daniels/PingTunnel/
+Description: Tunnel TCP connections over ICMP packets
+ ptunnel is an application that allows you to reliably tunnel TCP
+ connections to a remote host using ICMP echo request and reply
+ packets, commonly known as ping requests and replies. It acts as
+ a proxy and can handle sockets and secured identification.
+ .
+ Those features can be very handy when working in a closed networking
+ environment with firewalls and proxies.
+Filename: dists/termux/extras/binary-arm/ptunnel_0.72-1_arm.deb
+Size: 233282
+SHA256: 8c36911be57186c46947af7f5db56506ded25b89221d385c98bf769b9f5fec88
